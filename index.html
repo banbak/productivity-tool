@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Productividad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Herramienta de Productividad</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-section="tareas">Tareas</a></li>
+                <li><a href="#" data-section="metas">Metas</a></li>
+                <li><a href="#" data-section="proyectos">Proyectos</a></li>
+                <li><a href="#" data-section="analisis">Análisis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tareas" class="section-active">
+            <h2>Gestión de Tareas</h2>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Añadir nueva tarea...">
+                <button type="submit">Añadir Tarea</button>
+            </form>
+            <ul id="task-list"></ul>
+        </section>
+
+        <section id="metas" class="section-hidden">
+            <h2>Seguimiento de Metas</h2>
+            <form id="goal-form">
+                <input type="text" id="goal-input" placeholder="Añadir nueva meta...">
+                <button type="submit">Añadir Meta</button>
+            </form>
+            <ul id="goal-list"></ul>
+        </section>
+
+        <section id="proyectos" class="section-hidden">
+            <h2>Gestión de Proyectos</h2>
+            <form id="project-form">
+                <input type="text" id="project-input" placeholder="Añadir nuevo proyecto...">
+                <button type="submit">Añadir Proyecto</button>
+            </form>
+            <ul id="project-list"></ul>
+        </section>
+
+        <section id="analisis" class="section-hidden">
+            <h2>Análisis de Productividad</h2> <br>
+            <div id="productivity-report">
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
